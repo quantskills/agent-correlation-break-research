@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "agent": "agent-correlation-break-research",
+  "output_dir": "outputs/live",
+  "data_source": "Pandadata",
+  "tables": {
+    "future_dominant_corr": {
+      "rows": 9,
+      "columns": [
+        "correlation",
+        "pair"
+      ]
+    }
+  },
+  "charts": [
+    "charts/correlation_heatmap.png",
+    "charts/cross_correlation_bars.png",
+    "charts/scorecard_metrics.png"
+  ],
+  "report": "outputs/live/report.html"
+}
