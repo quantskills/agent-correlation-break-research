@@ -1,0 +1,16 @@
+name: "agent-correlation-break-research"
+display_name: "Correlation Break Research Agent"
+short_description: "Detect correlation breaks, style shifts, and diversification stress from Pandadata return evidence."
+default_prompt: "Use agent-correlation-break-research with Pandadata live evidence and produce reader-facing research materials."
+metadata:
+  organization: "QuantSkills"
+  organization_url: "https://github.com/quantskills"
+  repository: "quantskills/agent-correlation-break-research"
+  repository_url: "https://github.com/quantskills/agent-correlation-break-research"
+  project_type: "agent"
+  collection: "pandadata-research-monitor-agents-8"
+  license: "GPL-3.0"
+  category: "research-agent"
+  tags: ["correlation-break", "style-shift", "portfolio-risk", "pandadata"]
+  platforms: ["claude-code", "codex", "openclaw", "cursor"]
+  data_source: "Pandadata"
