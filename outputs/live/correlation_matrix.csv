@@ -1,0 +1,10 @@
+pair,correlation
+RB:RB,1.0
+RB:JM,0.74
+RB:A,-0.05
+JM:RB,0.74
+JM:JM,1.0
+JM:A,-0.12
+A:RB,-0.05
+A:JM,-0.12
+A:A,1.0

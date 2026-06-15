@@ -1,0 +1,7 @@
+metric,value,type,reader_note
+state,correlation-break-watch,str,核心状态字段
+max_abs_cross_corr,0.74,float,用于复核本次判断的证据字段
+min_abs_cross_corr,0.05,float,用于复核本次判断的证据字段
+corr_spread,0.69,float,用于复核本次判断的证据字段
+pair_count,9,int,用于复核本次判断的证据字段
+confidence,medium,str,用于复核本次判断的证据字段

@@ -1,0 +1,26 @@
+{
+  "agent": "agent-correlation-break-research",
+  "state": "correlation-break-watch",
+  "risk_level": "高关注",
+  "execution_boundary": "research_and_monitoring_only",
+  "rules": [
+    {
+      "id": "agent-correlation-break-research.upgrade",
+      "severity": "watch_upgrade",
+      "condition": "相关性跨度继续扩大，且价格结构也出现风格切换。",
+      "action": "rerun_agent_and_add_to_research_backlog"
+    },
+    {
+      "id": "agent-correlation-break-research.degrade",
+      "severity": "watch_degrade",
+      "condition": "相关性变化来自极短窗口噪声、换合约或数据口径变化。",
+      "action": "lower_confidence_and_write_review_note"
+    },
+    {
+      "id": "agent-correlation-break-research.data_gap",
+      "severity": "data_quality",
+      "condition": "Pandadata 关键表行数低于本 Agent 需要的最低样本数",
+      "action": "stop_and_mark_inconclusive"
+    }
+  ]
+}

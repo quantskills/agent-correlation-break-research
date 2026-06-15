@@ -1,0 +1,8 @@
+{
+  "state": "correlation-break-watch",
+  "max_abs_cross_corr": 0.74,
+  "min_abs_cross_corr": 0.05,
+  "corr_spread": 0.69,
+  "pair_count": 9,
+  "confidence": "medium"
+}
