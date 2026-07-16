@@ -41,6 +41,44 @@ quantSkills:
   summary_en: Detect correlation breaks, style shifts, and diversification stress from Pandadata return evidence.
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "补充研究窗口、资产范围、重点风险或已有相关性假设（可选）"
+  },
+  "fields": [
+    {
+      "key": "index_a",
+      "label": "指数 A",
+      "type": "select",
+      "default": "000300.SH",
+      "options": [
+        { "value": "000300.SH", "label": "沪深300" },
+        { "value": "000001.SH", "label": "上证指数" },
+        { "value": "399006.SZ", "label": "创业板指" },
+        { "value": "000905.SH", "label": "中证500" },
+        { "value": "000852.SH", "label": "中证1000" }
+      ]
+    },
+    {
+      "key": "index_b",
+      "label": "指数 B",
+      "type": "select",
+      "default": "399006.SZ",
+      "options": [
+        { "value": "000300.SH", "label": "沪深300" },
+        { "value": "000001.SH", "label": "上证指数" },
+        { "value": "399006.SZ", "label": "创业板指" },
+        { "value": "000905.SH", "label": "中证500" },
+        { "value": "000852.SH", "label": "中证1000" }
+      ]
+    }
+  ],
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}研究 {{index_a}} 与 {{index_b}} 的滚动相关性、相关性破裂、风格切换和分散化失效风险，基于 Pandadata 或用户数据给出证据、情景、失效条件、观察清单与复核模板，不执行交易，输出中文报告。"
+}
+```
+
 # Correlation Break Research Agent
 
 Use this Agent when a user needs a Pandadata-backed research or monitoring answer for:
